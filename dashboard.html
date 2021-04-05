@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Cajero</title>
+</head>
+<body>
+      <div class="contenedorCuenta text-center" style="background-color: rgb(19, 41, 66);">
+
+        <div style="color:white; align-content: center;">
+            <h2 id="nombreCliente" class="nombreCliente"></h2>
+            <h2>________________________________________</h2>
+        </div>
+        <div style="color:white; width: 50%;">
+            <h6 style="color:white;"> TARJETAS </h6> 
+            <div id="divDinamico" class="d-flex flex-row d-flex justify-content-center">
+               
+
+            </div>
+
+        </div>
+
+
+        <div style="color:white;" id="menuCajero" class="contenedorOpciones d-flex justify-content-around">
+            <div style="width:200px;">
+                <br>
+                <br>
+               <h2><label id="saldoActual">$9555</label></h2>
+               <h6>Saldo disponible</h6>
+
+            </div>
+            <div style="height:100px;"><br></div>
+            <div class="botones d-flex flex-column">
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary" id="btnConsultaSaldo">Retirar efectivo</button>
+                <br>
+                <button type="button" class="btn btn-primary" id="btnConsultaSaldo">Depositar</button>
+                <br>
+                <button type="button" class="btn btn-primary" id="btnConsultaSaldo">Transferir</button>
+            </div>
+        </div>
+      
+        </br>
+        </br>
+        <button type="button" class="btn btn-light sticky-top" id="btnSalir">Salir</button>
+        
+     </div>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Cajero</title>
+</head>
+<body>
+    <form id="formContenedor">
+        <div class="contenedorLogin" style="width: 300px;">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Cuenta bancaria</label>
+                <input type="text" class="form-control" id="inpCuenta">
+            <div class="form-text">Debe contener 8 digitos</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">PIN</label>
+                <input type="password" class="form-control" id="inpPIN">
+            <div class="form-text">Nunca compartas tu PIN</div>
+            </div>
+            <div id="mensajeValidacion" class="alert alert-danger" role="alert">
+                
+            </div>
+            <br>
+            <button id="ValidarLogin" type="button" class="btn btn-dark">LOGIN</button>
+        </div>
+      </form>
+      <div class="contenedorCuenta" style="background-color: rgb(19, 41, 66);"></div>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./cajero.js"></script>
+</body>
+</html>
